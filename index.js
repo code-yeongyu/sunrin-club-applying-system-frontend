@@ -19,6 +19,8 @@ const login = require("./routers/login")
 const view = require("./routers/view")
 const detail = require("./routers/detail")
 
+const PORT = process.env.PORT || 5000
+
 const session = expressSession({
     secret: "my key",
     resave: true,
@@ -59,8 +61,8 @@ app.all("*", function (req, res) {
     res.status(404).send("<h1> 404 Error </h1>")
 })
 
-http.listen(4000, function () {
-    console.log("server on!")
+http.listen(PORT, function () {
+    console.log(`server on port ${PORT}!`)
 })
 
 module.exports = app

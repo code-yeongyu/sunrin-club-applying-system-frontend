@@ -13,5 +13,12 @@
     "express-session": "^1.17.1",
     "morgan": "^1.10.0",
     "request": "^2.88.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "production-start": "pm2 start -i max index.js"
+  },
+  "devDependencies": {
+    "pm2": "^4.5.5"
   }
 }
