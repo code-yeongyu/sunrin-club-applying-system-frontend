@@ -47,15 +47,23 @@ app.engine("html", require("ejs").renderFile)
 
 app.use(logger("dev"))
 
-app.use("/", preparing)
-// app.use('/layer7', layer7);
-// app.use('/unifox', unifox);
-// app.use('/nefus', nefus);
-// app.use('/teamlog', teamlog);
-// app.use('/emotion', emotion);
-// app.use('/login', login);
-// app.use('/view', view);
-// app.use('/detail', detail);
+if (Date.now() < Date.parse("2021-03-13")) {
+    // before the applying period
+    app.use("/", preparing)
+} else if (Date.now() < Date.parse("2021-03-18")) {
+    // in the applying period
+    app.use("/", main)
+    app.use("/layer7", layer7)
+    app.use("/unifox", unifox)
+    app.use("/nefus", nefus)
+    app.use("/teamlog", teamlog)
+    app.use("/emotion", emotion)
+    app.use("/login", login)
+    app.use("/view", view)
+    app.use("/detail", detail)
+} else {
+    app.use("/", end)
+}
 
 app.all("*", function (req, res) {
     res.status(404).send("<h1> 404 Error </h1>")
