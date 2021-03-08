@@ -27,7 +27,7 @@ router.post("/", function (req, res) {
     }
     request.post(
         {
-            url: "http://funnyga.me:14104/custom_user/auth/",
+            url: "https://api.club.sunrinsecurity.com/custom_user/auth/",
             form: formData,
         },
         function (err, httpResponse, body) {

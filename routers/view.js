@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
         }
         request.get(
             {
-                url: "http://funnyga.me:14104/application/",
+                url: "https://api.club.sunrinsecurity.com/application/",
                 headers: headerData,
             },
             function (err, httpResponse, body) {

@@ -62,6 +62,14 @@ router.post("/", function (req, res) {
             .replace("<", "&lt;")
             .replace(">", "&gt;")
             .replace("&lt;br/&gt;", "<br/>")
+    let content07 =
+        "질문 7 (*선택) 수상경력이나 진행한 프로젝트가 있다면 작성해 주시기 바랍니다." +
+        "<br/>" +
+        req.body.textarea07
+            .replace(/(?:\r\n|\r|\n)/g, "<br/>")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace("&lt;br/&gt;", "<br/>")
     var formData = {
         club: club,
         name: name.slice(0, 5),
@@ -75,11 +83,12 @@ router.post("/", function (req, res) {
             content04,
             content05,
             content06,
+            content07,
         ]),
     }
     request.post(
         {
-            url: "http://funnyga.me:14104/application/apply/",
+            url: "https://api.club.sunrinsecurity.com/application/apply/",
             form: formData,
         },
         function (err, httpResponse, body) {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300|Roboto+Mono:500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300|Roboto+Mono:500&display=swap");
 *,
 :before,
 :after {
@@ -6,11 +6,10 @@
   cursor: url(maplcursor.cur), auto !important;
 }
 
-
 body {
   width: 100%;
   height: 100%;
-  background: url('images/background.png') #eaeaea;
+  background: url("images/background.png") #eaeaea;
 }
 
 form {
@@ -18,14 +17,14 @@ form {
   margin: 45px auto;
 }
 form h1 {
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
   font-size: 3.4em;
   font-weight: 300;
   text-align: center;
   color: #6d0000;
 }
 form h5 {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   text-align: center;
   color: #282828;
   line-height: 1.8em;
@@ -47,19 +46,33 @@ form .emoji {
   margin: 45px 0;
 }
 
-a{ font-family: 'Noto Sans KR'; }
-a:link { color: #6d0000; text-decoration: underline;}
-a:visited { color: #6d0000; text-decoration: underline;}
-a:hover { color: #8b8b8b; text-decoration: none;}
-
+a {
+  font-family: "Noto Sans KR";
+}
+a:link {
+  color: #6d0000;
+  text-decoration: underline;
+}
+a:visited {
+  color: #6d0000;
+  text-decoration: underline;
+}
+a:hover {
+  color: #8b8b8b;
+  text-decoration: none;
+}
 
 textarea {
   resize: none;
 }
 
+#textarea04 {
+  padding-top: 20px;
+}
+
 input,
 textarea {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   background: none;
   color: black;
   font-size: 18px;
@@ -74,7 +87,8 @@ input:focus,
 textarea:focus {
   outline: none;
 }
-input:focus ~ label, input:valid ~ label,
+input:focus ~ label,
+input:valid ~ label,
 textarea:focus ~ label,
 textarea:valid ~ label {
   top: -14px;
@@ -91,7 +105,7 @@ input[type="password"] {
 }
 
 label {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   color: black;
   font-size: 16px;
   font-weight: normal;
@@ -103,12 +117,16 @@ label {
   transition: 300ms ease all;
 }
 
-input:-webkit-autofill { -webkit-box-shadow: 0 0 0 30px none inset ;} 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px none inset;
+}
 
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { transition: background-color 5000s ease-in-out 0s; }
-
-
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 .bar {
   position: relative;
@@ -116,7 +134,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   width: 640px;
 }
 .bar:before {
-  content: '';
+  content: "";
   height: 2px;
   width: 0;
   bottom: 0px;
@@ -128,7 +146,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .btn {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   background: #fff;
   color: #959595;
   border: none;
@@ -176,24 +194,22 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   float: center;
 }
 .logo_box {
-    text-align: center;
+  text-align: center;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 20px;
-    width:690px;
-    border-color:black;
-    border-width: 1px;
-    background-color: rgba(200,200,200,0.4);
+  margin: 0 auto;
+  padding: 20px;
+  width: 690px;
+  border-color: black;
+  border-width: 1px;
+  background-color: rgba(200, 200, 200, 0.4);
 }
 
-#small_font{
-    font-size: 14px;
+#small_font {
+  font-size: 14px;
 }
 
-#middle_font{
-    font-size: 15px;
+#middle_font {
+  font-size: 15px;
 }
-
-

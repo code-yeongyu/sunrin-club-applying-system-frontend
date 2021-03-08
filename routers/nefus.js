@@ -39,7 +39,7 @@ router.post("/", function (req, res) {
             .replace(">", "&gt;")
             .replace("&lt;br/&gt;", "<br/>")
     let content04 =
-        "질문 4 자신이 네퓨즈에 들어와서 배우고 싶은 것을 적고, 이유를 같이 적어주세요. : " +
+        "질문 4 네퓨즈에서 진행하고 싶은 프로젝트를 작성하시오 : " +
         "<br/>" +
         req.body.textarea04
             .replace(/(?:\r\n|\r|\n)/g, "<br/>")
@@ -47,9 +47,17 @@ router.post("/", function (req, res) {
             .replace(">", "&gt;")
             .replace("&lt;br/&gt;", "<br/>")
     let content05 =
-        "질문 5 아래에 포토폴리오를 공유한 구글 드라이브 링크를 기재해주세요 : " +
+        "질문 5 요구한 것보다 더 높은 목표를 시도했던 경험 중 기억에 남는것을 작성하시오 : " +
         "<br/>" +
         req.body.textarea05
+            .replace(/(?:\r\n|\r|\n)/g, "<br/>")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace("&lt;br/&gt;", "<br/>")
+    let content06 =
+        "질문 6 아래에 포토폴리오를 공유한 구글 드라이브 링크를 기재해주세요 : " +
+        "<br/>" +
+        req.body.textarea06
             .replace(/(?:\r\n|\r|\n)/g, "<br/>")
             .replace("<", "&lt;")
             .replace(">", "&gt;")
@@ -66,11 +74,12 @@ router.post("/", function (req, res) {
             content03,
             content04,
             content05,
+            content06,
         ]),
     }
     request.post(
         {
-            url: "http://funnyga.me:14104/application/apply/",
+            url: "https://api.club.sunrinsecurity.com/application/apply/",
             form: formData,
         },
         function (err, httpResponse, body) {

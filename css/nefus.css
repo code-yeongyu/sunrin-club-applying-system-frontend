@@ -1,42 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+}
 
-*,:before,:after {
+*,
+:before,
+:after {
   box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: url(maplcursor.cur), auto !important;
 }
 body {
-  background-image: linear-gradient(95deg, #667eea 0%, #764ba2 100%);
+  background-image: linear-gradient(95deg, #96a7da 0%, #7495da 100%);
+  /* background-color:#7495DA; */
 }
 .center {
-  margin: 1px auto;
+  margin: auto;
   width: 50%;
 }
 .intro {
-  padding: 15px;
+  padding: 25px;
   border-radius: 50px;
-  background: linear-gradient(135deg, #999eff, #8185e2);
-  box-shadow: 18px 18px 45px #7175c6, -18px -18px 45px #adb3ff;
+  font-family: "GmarketSansBold";
+  font-size: 18px;
+  background: #6369d9;
+  box-shadow: 18px 18px 30px #7175c6, -18px -18px 30px #adb3ff;
+  line-height: 160%;
+}
+.intro a {
+  color: #ffffff;
+}
+.intro a:hover {
+  color: #f5c531;
 }
 .main {
   padding: 40px;
   border-radius: 20px;
-  background-image: linear-gradient(42deg, #4e54c8 0%, #8f94fb 100%);
+  /* background-image: linear-gradient(42deg, #4e54c8 0%, #8f94fb 100%); */
+  background-color: #4e54c8;
 }
 form {
   width: 640px;
   margin: 45px auto;
 }
 form h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 300;
   text-align: center;
-  color: #dcdde1;
+  color: #ffffff;
+  font-family: "GmarketSansBold";
 }
 form h5 {
   text-align: center;
   text-transform: uppercase;
-  color: #dcdde1;
+  color: #ffffff;
 }
 form hr.sep {
   background: #718093;
@@ -53,14 +72,21 @@ form .emoji {
   position: relative;
   margin: 50px 0;
 }
-
+.group a {
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+}
+.group a:hover {
+  color: #f5c531;
+}
 textarea {
   resize: none;
 }
 input,
 textarea {
   background: none;
-  color: #c6c6c6;
+  color: #ffffff;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -68,6 +94,9 @@ textarea {
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #c6c6c6;
+}
+#textarea05 {
+  padding-top: 20px;
 }
 input:focus,
 textarea:focus {
@@ -89,7 +118,7 @@ input[type="password"] {
   letter-spacing: 0.3em;
 }
 label {
-  color: #c6c6c6;
+  color: #ffffff;
   font-size: 16px;
   font-weight: normal;
   position: absolute;
@@ -105,7 +134,7 @@ label {
   width: 640px;
 }
 .bar:before {
-  content: '';
+  content: "";
   height: 2px;
   width: 0;
   bottom: 0;
@@ -117,15 +146,16 @@ label {
 }
 .btn {
   background: #ffffff;
-  color: #959595;
+  color: #ffffff;
   font-size: 12px;
   border: none;
-  padding: 20px;
+  padding: 25px;
   border-radius: 3px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
   outline: none;
+  font-size: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -135,20 +165,20 @@ label {
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
 }
 .btn.btn-link {
-  background: #646ade;
-  color: #d3eafd;
+  background: #4e54c8;
+  color: #ffffff;
 }
 .btn.btn-link:hover {
-  background: #646ade;
-  color: #deeffd;
+  background: #4e54c8;
+  color: #ffffff;
 }
 .btn.btn-submit {
-  background: #8e58c4;
-  color: #bce0fb;
+  background: #4e54c8;
+  color: #ffffff;
 }
 .btn.btn-submit:hover {
-  background: #646ade;
-  color: #deeffd;
+  background: #4e54c8;
+  color: #ffffff;
 }
 .btn.btn-cancel {
   background: #eee;
@@ -159,5 +189,9 @@ label {
 }
 .btn-box {
   text-align: center;
-  margin: 50px 0;
+  margin: 20% auto;
+}
+
+a:link {
+  color: #ffffff;
 }

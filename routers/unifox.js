@@ -70,7 +70,7 @@ router.post("/", function (req, res) {
     }
     request.post(
         {
-            url: "http://funnyga.me:14104/application/apply/",
+            url: "https://api.club.sunrinsecurity.com/application/apply/",
             form: formData,
         },
         function (err, httpResponse, body) {
