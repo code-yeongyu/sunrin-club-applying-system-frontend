@@ -47,10 +47,10 @@ app.engine("html", require("ejs").renderFile)
 
 app.use(logger("dev"))
 
-if (Date.now() < Date.parse("2021-03-13")) {
+if (Date.now() < Date.parse("2021-03-15")) {
     // before the applying period
     app.use("/", preparing)
-} else if (Date.now() < Date.parse("2021-03-18")) {
+} else if (Date.now() < Date.parse("2021-03-17 20:00")) {
     // in the applying period
     app.use("/", main)
     app.use("/layer7", layer7)
