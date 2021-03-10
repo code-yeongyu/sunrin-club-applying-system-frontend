@@ -13,7 +13,7 @@ router.get("/:idx", function (req, res) {
         }
         request.get(
             {
-                url: `https://api.club.sunrinsecurity.com/application/${idx}/`,
+                url: `https://clubapi.sunrinsecurity.com/application/${idx}/`,
                 headers: headerData,
             },
             function (err, httpResponse, body) {
@@ -46,7 +46,7 @@ router.get("/delete/:idx", function (req, res) {
         }
         request.delete(
             {
-                url: `https://api.club.sunrinsecurity.com/application/${idx}/`,
+                url: `https://clubapi.sunrinsecurity.com/application/${idx}/`,
                 headers: headerData,
             },
             function (err, httpResponse, body) {

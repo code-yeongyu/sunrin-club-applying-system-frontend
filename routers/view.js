@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
         }
         request.get(
             {
-                url: "https://api.club.sunrinsecurity.com/application/",
+                url: "https://clubapi.sunrinsecurity.com/application/",
                 headers: headerData,
             },
             function (err, httpResponse, body) {
