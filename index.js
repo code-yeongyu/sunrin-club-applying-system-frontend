@@ -58,11 +58,11 @@ if (Date.now() < Date.parse("2021-03-15")) {
     app.use("/nefus", nefus)
     app.use("/teamlog", teamlog)
     app.use("/emotion", emotion)
-    app.use("/login", login)
-    app.use("/view", view)
 } else {
     app.use("/", end)
 }
+app.use("/login", login)
+app.use("/admin", view)
 app.use("/detail", detail)
 
 app.all("*", function (req, res) {
