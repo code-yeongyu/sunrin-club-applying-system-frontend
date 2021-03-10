@@ -60,10 +60,10 @@ if (Date.now() < Date.parse("2021-03-15")) {
     app.use("/emotion", emotion)
     app.use("/login", login)
     app.use("/view", view)
-    app.use("/detail", detail)
 } else {
     app.use("/", end)
 }
+app.use("/detail", detail)
 
 app.all("*", function (req, res) {
     res.status(404).send("<h1> 404 Error </h1>")
