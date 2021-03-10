@@ -62,7 +62,7 @@ if (Date.now() < Date.parse("2021-03-15")) {
     app.use("/", end)
 }
 app.use("/login", login)
-app.use("/admin", view)
+app.use("/view", view)
 app.use("/detail", detail)
 
 app.all("*", function (req, res) {
