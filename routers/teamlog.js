@@ -79,7 +79,7 @@ router.post("/", function (req, res) {
     }
     request.post(
         {
-            url: "https://api.club.sunrinsecurity.com/application/apply/",
+            url: "https://clubapi.sunrinsecurity.com/application/apply/",
             form: formData,
         },
         function (err, httpResponse, body) {
