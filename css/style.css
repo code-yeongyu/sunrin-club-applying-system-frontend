@@ -17,7 +17,7 @@ h1 {
   transform: translate(-50%, -50%);
   display: block;
   font-size: 60px;
-  font-family: "Lato" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .message {
   animation: typeMsg 7s steps(40) 1s 1 normal both,
