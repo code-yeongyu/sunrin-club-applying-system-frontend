@@ -131,7 +131,7 @@ body {
 }
 
 body.choice-1 {
-  background-image: url(http://layer7.kr/2020/images/logo.png);
+  background-image: url(./images/layer7_main.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -179,7 +179,7 @@ body.choice-4 section.background-select .card h1 {
 }
 
 body.choice-5 {
-  background-image: url(https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/26994217_701495803391151_304561625125649476_n.jpg?_nc_cat=111&_nc_ohc=DkO4ceMdhd0AX8sMxpc&_nc_ht=scontent-ssn1-1.xx&oh=d22af324fb7577a24410ef96c459703a&oe=5EFD6F46);
+  background-image: url(./images/emotion.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
