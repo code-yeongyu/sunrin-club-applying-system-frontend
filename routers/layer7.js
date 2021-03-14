@@ -47,7 +47,7 @@ router.post("/", function (req, res) {
             .replace(">", "&gt;")
             .replace("&lt;br/&gt;", "<br/>")
     let content05 =
-        "질문 5 (*선택) 동아리 합격 후 하고싶은 공부와 포부에 대하여 서술해주세요" +
+        "질문 5 (*필수) 동아리 합격 후 하고싶은 공부와 포부에 대하여 서술해주세요" +
         "<br/>" +
         req.body.textarea05
             .replace(/(?:\r\n|\r|\n)/g, "<br/>")
